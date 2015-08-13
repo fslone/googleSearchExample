@@ -51,7 +51,13 @@
 
   function _registerRestCalls() {
 
-    // _server.get("/restapi/BlahBlahBlah", __getWhatIWant);
+    _server.get("/restapi/GetImage", __getGoogleImage);
+
+    function __getGoogleImage() {
+      var emailAddr;
+
+      emailAddr = req.params.email;
+    }
 
   }
 
