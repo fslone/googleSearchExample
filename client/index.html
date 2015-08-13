@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tweet/Wiki Search Engine</title>
+  <meta name="description" content="A sample search engine using the Wikipedia and Twitter APIs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <div class="container" id="search_container">
+    <form class="inner_container" id="queryForm">
+      <fieldset>
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Tweet/Wiki Search Engine</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Type your query below to search the Twitter and Wikipedia APIs!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <input type="text" name="query" id="query_box" class="form form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-xs-12 error-row">
+            <span></span>
+          </div>
+          <div class="checkbox col-sm-8 col-xs-12">
+            <label for="radius" class="pull-right hidden"><input id="radius" type="checkbox" name="radius" class="hidden" />Limit results to those near me</label>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <button class="btn btn-primary pull-right">Search</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <h2>Wikis</h2>
+    <hr />
+    <div id="wikipedia_results" class="row col-xs-12">
+    </div>
+    <h2>Tweets</h2>
+    <hr />
+    <div id="twitter_results" class="row col-xs-12">
+    </div>
+  </div>
+  
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

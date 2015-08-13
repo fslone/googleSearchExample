@@ -1,0 +1,15 @@
+.container {
+  margin: 20px; }
+  .container .checkbox {
+    margin-top: 5px; }
+  .container .error-row {
+    color: red;
+    padding-top: 5px; }
+  .container .logo {
+    text-align: center; }
+
+#wikipedia_results .row {
+  margin-bottom: 15px; }
+
+#twitter_results .row {
+  margin-bottom: 15px; }
